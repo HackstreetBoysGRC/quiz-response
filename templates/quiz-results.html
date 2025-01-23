@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Easy grAIde</h1>
+    <h2>Upload your quiz csv file to get started</h2>
+    <br />
+
+    <form action="quizResults()" method="post">
+        <label for="rubric">Choose your rubric</label>
+        <input type="file" id="rubric" name="rubric" accept=".csv">
+
+        <label for="quiz">Choose your quiz responses</label>
+        <input type="file" id="quiz" name="quiz-response" accept=".csv">
+
+        <button type="submit" name="submit">Submit</button>
+    </form>
+
+</body>
+</html>
