@@ -30,7 +30,7 @@ app = Flask(__name__)
 #
 @app.route('/')
 def base_index():
-    return render_template("./templates/quiz-results.html")
+    return render_template("quiz-results.html")
 
 if __name__ == '__main__':
     app.run(port=8080)
