@@ -19,13 +19,18 @@
 
 
 # todo:
-# import flask
 # import AI API
 # serve a webpage
 
-from flask import Flask
+from flask import Flask, render_template
 from groq import Groq
 
+app = Flask(__name__)
 
+#
+@app.route('/')
+def base_index():
+    return render_template("./templates/quiz-results.html")
 
-print("Hello World")
+if __name__ == '__main__':
+    app.run(port=8080)
