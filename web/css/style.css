@@ -1,8 +1,56 @@
 img {
     height: 100%;
-    position: absolute;
 }
 
 nav {
-    height: 100px;
+    position: fixed;
+    height: 10%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
 }
+
+body {
+    background-color: #e5eded;
+    margin-top: 5%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Styles for the buttons */ 
+
+#submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;          
+}
+
+#submit:hover {
+    background-color: #45a049;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;  
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; 
+    flex-wrap: wrap; 
+}
+
+.form-item {
+    flex: 1 1 auto; 
+}
+
+.submit-item {
+    margin-left: auto; 
+}
+
