@@ -25,12 +25,18 @@
 from flask import Flask, render_template
 from groq import Groq
 
+import csv_reader
+
 app = Flask(__name__, static_url_path='/static', static_folder='web')
+
+print(csv_reader.get_csv('sample.csv'))
 
 #
 @app.route('/')
 def base_index():
     return render_template("quiz-results.html")
+
+
 
 if __name__ == '__main__':
     app.run(port=8080)
