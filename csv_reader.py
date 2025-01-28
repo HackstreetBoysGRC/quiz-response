@@ -1,4 +1,4 @@
-# handles csv reading
+# handles csv reading/writing from pythongs csv library
 
 import csv
 

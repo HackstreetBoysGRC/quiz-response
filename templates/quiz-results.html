@@ -36,5 +36,23 @@
         </div>
     </form>
 
+    {% set csv_data = csvr('sample.csv') %}
+    <table>
+        <tr>            
+            {% set header_row = csv_data[0] %}
+            {% for header in header_row %}
+                <th>{{ header }}</th>
+            {% endfor %}
+        </tr>
+    {% for row in csv_data %}
+        <tr>
+            {% for _,col in row.items() %}
+                <td>{{col}}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+        
+    </table>
+
 </body>
 </html>
