@@ -30,8 +30,10 @@
                 <input type="file" id="quiz" name="quiz-response" accept=".csv">
             </div>
 
-            <div class = "submit-item"></div>
+            <div class = "submit-item">
                 <button type="submit" id="submit" name="submit">Submit</button>
+                <!-- Hidden section for the error message if both files aren't submitted -->
+                <span id="error-message"></span>
             </div>
         </div>
     </form>
@@ -54,5 +56,7 @@
         
     </table>
 
+<!-- Link to script for validation of file upload -->
+<script src="{{ url_for('static', filename='js/validation.js') }}"></script>
 </body>
 </html>
