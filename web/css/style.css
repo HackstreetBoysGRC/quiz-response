@@ -3,7 +3,7 @@ img {
 }
 
 nav {
-    position: fixed;
+    position: absolute;
     height: 10%;
     top: 0;
     left: 0;
@@ -44,6 +44,7 @@ input[type="submit"]:hover {
     justify-content: space-between;
     gap: 10px; 
     flex-wrap: wrap; 
+    margin: 25px;
 }
 
 .form-item {
@@ -52,5 +53,21 @@ input[type="submit"]:hover {
 
 .submit-item {
     margin-left: auto; 
+}
+
+table {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    border: 2px solid slategray;
+}
+
+th {
+    border-bottom: 1px solid slategray;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
