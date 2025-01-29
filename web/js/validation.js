@@ -5,7 +5,7 @@ document.getElementById('submit').addEventListener('click', function(event) {
         let quizFile = document.getElementById('quiz').files.length;
 
         // grab the error message tag
-        let errorMessage = document.getElementById('error-message');  // Get the error message container
+        let errorMessage = document.getElementById('error-message');
 
 
         // if the files aren't there, tell the user in the html
